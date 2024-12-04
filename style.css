@@ -1,0 +1,54 @@
+header {
+    display: flex;
+    background-color: #6D6576;
+    justify-content: space-between;
+    color: #f4f2f1;
+    padding: 15px 15px 30px 15px;
+    border-radius: 0px 0px 30px 30px;
+}
+
+body {
+    font-size: 1.25em;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f2f1;
+    color: #545163;
+}
+
+p, h1, h2, h3 {
+    margin: 0px;
+}
+
+.activity {
+    
+}
+
+.activity > div {
+    display: flex;
+    border-radius: 35px;
+    padding: 20px;
+    margin: 15px;
+    box-shadow: 0px 0px 15px 2px #D4CDC9;
+}
+
+.activity img {
+    height: 275px;
+    width: auto;
+    border-radius: 15px;
+    margin: 20px;
+}
+
+.avis {
+    display: flex;
+    flex-direction: column;
+    border-radius: 35px;
+    padding: 20px;
+    margin: 15px;
+    box-shadow: 0px 0px 15px 2px #D4CDC9;
+}
+
+.avis div {
+    display: flex;
+    justify-content: space-between;
+}

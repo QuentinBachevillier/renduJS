@@ -32,6 +32,8 @@ function initHeader(data) {
 
 function initMain(data) {
     for (let i = 0; i < data.activites.length; i++) {
+        createHtmlElement("p", data.avantagesClients[i], main);
+
         let section = createHtmlElement("section", null, main);
 
         initActivity(data, i, section);
@@ -42,16 +44,14 @@ function initMain(data) {
 }
 
 function initActivity(data, i, parent) {
-    let section = createHtmlElement("section", null, parent)
-    section.className = "activity"
-        createHtmlElement("p", data.avantagesClients[i], section);
-        let div = createHtmlElement("div", null, section);
-            createHtmlElement("img", data.activites[i]["image-url"], div);
-            let innerDiv = createHtmlElement("div", null, div);
-                createHtmlElement("h2", data.activites[i]["nom"], innerDiv);
-                createHtmlElement("p", data.activites[i]["description"], innerDiv);
-                createHtmlElement("button", data.texteAppelAction, innerDiv);
-            
+    let section = createHtmlElement("section", null, parent);
+        section.className = "activity";
+        createHtmlElement("img", data.activites[i]["image-url"], section);
+        let Div = createHtmlElement("div", null, section);
+            createHtmlElement("h2", data.activites[i]["nom"], Div);
+            createHtmlElement("p", data.activites[i]["description"], Div);
+            createHtmlElement("button", data.texteAppelAction, Div);
+        
 }
 
 function initAvis(data, i, parent) {
@@ -75,3 +75,4 @@ function createHtmlElement(element, content, parent) {
     parent.appendChild(htmlElement);
     return htmlElement;
 }
+

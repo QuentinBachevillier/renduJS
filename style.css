@@ -1,8 +1,8 @@
 header {
     display: flex;
-    background-color: #6D6576;
+    background-color: #4d465a;
     justify-content: space-between;
-    color: #f4f2f1;
+    color: #f5f1ed;
     padding: 15px 15px 30px 15px;
     border-radius: 0px 0px 30px 30px;
 }
@@ -12,43 +12,61 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f2f1;
-    color: #545163;
+    background-color: #5d556d;
+    color: #f5f1ed;
 }
 
 p, h1, h2, h3 {
     margin: 0px;
 }
 
-.activity {
-    
+main > section {
+    display: flex;
 }
 
-.activity > div {
-    display: flex;
+section > section {
+    background-color: #4d465a;
     border-radius: 35px;
     padding: 20px;
     margin: 15px;
-    box-shadow: 0px 0px 15px 2px #D4CDC9;
+    box-shadow: 0px 0px 15px 2px #4d465a;
 }
+
+.activity {
+    display: flex;
+}
+
+.activity > div {
+    margin: 20px;
+}
+
 
 .activity img {
     height: 275px;
     width: auto;
     border-radius: 15px;
-    margin: 20px;
 }
 
 .avis {
     display: flex;
     flex-direction: column;
-    border-radius: 35px;
-    padding: 20px;
-    margin: 15px;
-    box-shadow: 0px 0px 15px 2px #D4CDC9;
+    
 }
 
 .avis div {
     display: flex;
     justify-content: space-between;
+}
+
+button {
+    padding: 10px;
+    border-radius: 25px;
+    height: fit-content;
+    background-color: #e8ce70;
+    color: #4d465a;
+    border: #4d465a;
+}
+
+button:hover {
+    cursor: pointer;
 }

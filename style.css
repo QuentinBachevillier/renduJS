@@ -106,6 +106,7 @@ button, .note, .avClients{
 
 .note {
     color: hsl(260, 7%, 38%);
+    background-color: hsl(60, 50%, 55%);
 }
 
 .avClients {

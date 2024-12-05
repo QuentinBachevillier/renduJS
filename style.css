@@ -1,11 +1,12 @@
 header {
     display: flex;
-    background-color: hsl(261, 7%, 31%);
+    background-color: hsl(260, 7%, 31%);
     justify-content: space-between;
-    color: #f5f1ed;
+    color: hsl(60, 45%, 87%);
     padding: 10px 15px 30px 15px;
     border-radius: 0px 0px 30px 30px;
     margin-bottom: 15px;
+    box-shadow: 0px 0px 15px 2px hsl(260, 7%, 31%);
 }
 
 body {
@@ -14,7 +15,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: hsl(260, 7%, 38%);
-    color: #f5f1ed;
+    color: hsl(60, 45%, 87%);
     font-family: "Quicksand", serif;
 }
 
@@ -31,11 +32,11 @@ main > section {
 }
 
 section > section {
-    background-color: hsl(261, 7%, 31%);
+    background-color: hsl(260, 7%, 31%);
     border-radius: 35px;
     padding: 20px;
     margin: 15px;
-    box-shadow: 0px 0px 15px 2px hsl(261, 7%, 31%);
+    box-shadow: 0px 0px 15px 2px hsl(260, 7%, 31%);
 }
 
 .activity {
@@ -75,23 +76,22 @@ button, .note, .avClients{
     border-radius: 25px;
     height: fit-content;
     background-color: hsl(60, 45%, 55%);
-    color: hsl(261, 7%, 31%);
+    color: hsl(260, 7%, 31%);
     
-}
-
-.avClients {
-    border: solid 5px hsl(261, 7%, 31%);
-    color: hsl(261, 7%, 31%);
 }
 
 .note {
     border: solid 5px hsl(260, 7%, 38%);
     color: hsl(260, 7%, 38%);
+    box-shadow: 0px 0px 15px 2px hsl(260, 7%, 38%);
 }
 
 .avClients {
+    border: solid 5px hsl(260, 7%, 31%);
+    color: hsl(260, 7%, 31%);
     text-align: center;
     margin: 30px;
+    box-shadow: 0px 0px 15px 2px hsl(260, 7%, 31%);
 }
 
 button {
@@ -102,6 +102,7 @@ button {
     margin: 15px 0px;
     border: solid 5px hsl(260, 7%, 38%);
     transition: transform 0.2s;
+    box-shadow: 0px 0px 15px 2px hsl(260, 7%, 38%);
 }
 
 button:hover {

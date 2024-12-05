@@ -24,18 +24,34 @@ function initPage(data) {
 }
 
 function initHeader(data) {
+
     let div = createHtmlElement("div", null, header);
-    createHtmlElement("h1", data.nomCommercial, div);
-    createHtmlElement("p", data.phraseAccroche, div);
-    createHtmlElement("button", data.texteAppelAction, header);
+        let sousDiv = createHtmlElement("div", null, div);
+            createHtmlElement("h1", data.nomCommercial, sousDiv);
+            createHtmlElement("p", data.phraseAccroche, sousDiv);
+        createHtmlElement("button", data.texteAppelAction, div);
 }
 
 function initMain(data) {
     for (let i = 0; i < data.activites.length; i++) {
         let avClients = createHtmlElement("p", data.avantagesClients[i], main);
         avClients.className = "avClients"
+        switch (i) {
+            case 0:
+                avClients.id = "manoir";
+                break;
+            case 1:
+                avClients.id = "espace";
+                break;
+            case 2:
+                avClients.id = "paris";
+                break;
+            default:
+                break;
+        }
 
         let section = createHtmlElement("section", null, main);
+        
 
         initActivity(data, i, section);
 
@@ -46,7 +62,7 @@ function initMain(data) {
 
 function initActivity(data, i, parent) {
     let section = createHtmlElement("section", null, parent);
-        section.className = "activity";
+    section.className = "activity";
         createHtmlElement("img", data.activites[i]["image-url"], section);
         let Div = createHtmlElement("div", null, section);
             createHtmlElement("h2", data.activites[i]["nom"], Div);

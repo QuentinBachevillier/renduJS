@@ -1,6 +1,6 @@
 header {
     display: flex;
-    background-color: #4d465a;
+    background-color: hsl(261, 10%, 31%);
     justify-content: space-between;
     color: #f5f1ed;
     padding: 10px 15px 30px 15px;
@@ -13,7 +13,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #5d556d;
+    background-color: hsl(260, 10%, 38%);
     color: #f5f1ed;
     font-family: "Quicksand", serif;
 }
@@ -31,11 +31,11 @@ main > section {
 }
 
 section > section {
-    background-color: #4d465a;
+    background-color: hsl(261, 10%, 31%);
     border-radius: 35px;
     padding: 20px;
     margin: 15px;
-    box-shadow: 0px 0px 15px 2px #4d465a;
+    box-shadow: 0px 0px 15px 2px hsl(261, 10%, 31%);
 }
 
 .activity {
@@ -74,9 +74,19 @@ button, .note, .avClients{
     padding: 10px;
     border-radius: 25px;
     height: fit-content;
-    background-color: #dcb457;
-    color: #4d465a;
+    background-color: hsl(60, 55%, 55%);
+    color: hsl(261, 10%, 31%);
     
+}
+
+.avClients {
+    border: solid 5px hsl(261, 10%, 31%);
+    color: hsl(261, 10%, 31%);
+}
+
+.note {
+    border: solid 5px hsl(260, 10%, 38%);
+    color: hsl(260, 10%, 38%);
 }
 
 .avClients {
@@ -85,12 +95,12 @@ button, .note, .avClients{
 }
 
 button {
-    color: #5d556d;
-    background-color: #e4b23e;
+    color: hsl(260, 10%, 38%);
+    background-color: hsl(60, 55%, 55%);
     font-family: "Quicksand", serif;
     font-size: 0.8em;
     margin: 15px 0px;
-    border: solid 5px #5d556d;
+    border: solid 5px hsl(260, 10%, 38%);
     transition: transform 0.2s;
 }
 

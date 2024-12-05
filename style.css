@@ -3,8 +3,9 @@ header {
     background-color: #4d465a;
     justify-content: space-between;
     color: #f5f1ed;
-    padding: 15px 15px 30px 15px;
+    padding: 10px 15px 30px 15px;
     border-radius: 0px 0px 30px 30px;
+    margin-bottom: 15px;
 }
 
 body {
@@ -68,23 +69,33 @@ section > section {
 
 
 
-button, .note{
+button, .note, .avClients{
+    font-weight: 600;
     padding: 10px;
     border-radius: 25px;
     height: fit-content;
-    background-color: #e8ce70;
-    color: #d5a32f;
+    background-color: #dcb457;
+    color: #4d465a;
     
 }
 
+.avClients {
+    text-align: center;
+    margin: 30px;
+}
+
 button {
+    color: #5d556d;
+    background-color: #e4b23e;
+    font-family: "Quicksand", serif;
+    font-size: 0.8em;
     margin: 15px 0px;
-    border: solid 3px #d5a32f;
+    border: solid 5px #5d556d;
     transition: transform 0.2s;
 }
 
 button:hover {
     cursor: pointer;
-    transform: scale(1.05);
+    transform: scale(1.03);
 }
 

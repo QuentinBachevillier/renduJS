@@ -32,7 +32,8 @@ function initHeader(data) {
 
 function initMain(data) {
     for (let i = 0; i < data.activites.length; i++) {
-        createHtmlElement("p", data.avantagesClients[i], main);
+        let avClients = createHtmlElement("p", data.avantagesClients[i], main);
+        avClients.className = "avClients"
 
         let section = createHtmlElement("section", null, main);
 

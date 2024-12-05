@@ -15,6 +15,7 @@ fetch('https://js-dynamic-portfolio-data-makerslab-emlyon-cdweb-8f83155c64a0cc.g
 
 
 let header = document.getElementsByTagName("header")[0];
+let nav = document.getElementsByTagName("nav")[0];
 let main = document.getElementsByTagName("main")[0];   
 
 
@@ -24,12 +25,12 @@ function initPage(data) {
 }
 
 function initHeader(data) {
-
+    createHtmlElement("button", data.texteAppelAction, nav);
     let div = createHtmlElement("div", null, header);
         let sousDiv = createHtmlElement("div", null, div);
             createHtmlElement("h1", data.nomCommercial, sousDiv);
             createHtmlElement("p", data.phraseAccroche, sousDiv);
-        createHtmlElement("button", data.texteAppelAction, div);
+        
 }
 
 function initMain(data) {

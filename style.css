@@ -12,6 +12,9 @@ header > div {
 }
 
 nav {
+    display: flex;
+    justify-content: space-between;
+    z-index: 10;
     padding-bottom: 20px;
     width: 100%;
     position: fixed;
@@ -20,8 +23,7 @@ nav {
 
 nav div {
     display: flex;
-    justify-content: space-between;
-    width: 700px;
+    gap: 15px;
 }
 
 footer {

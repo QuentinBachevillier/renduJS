@@ -14,10 +14,15 @@ body {
     padding: 0;
     background-color: #5d556d;
     color: #f5f1ed;
+    font-family: "Quicksand", serif;
 }
 
 p, h1, h2, h3 {
     margin: 0px;
+}
+
+h1, h2, h3 {
+    margin-bottom: 10px;
 }
 
 main > section {
@@ -33,11 +38,15 @@ section > section {
 }
 
 .activity {
+    gap: 20px;
     display: flex;
+    min-width: 660px;
 }
 
-.activity > div {
-    margin: 20px;
+.activity > div, .avis {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 
@@ -47,26 +56,35 @@ section > section {
     border-radius: 15px;
 }
 
-.avis {
-    display: flex;
+.comment {
     flex-direction: column;
-    
 }
 
-.avis div {
+.avis > div {
     display: flex;
     justify-content: space-between;
 }
 
-button {
+
+
+
+button, .note{
     padding: 10px;
     border-radius: 25px;
     height: fit-content;
     background-color: #e8ce70;
-    color: #4d465a;
-    border: #4d465a;
+    color: #d5a32f;
+    
+}
+
+button {
+    margin: 15px 0px;
+    border: solid 3px #d5a32f;
+    transition: transform 0.2s;
 }
 
 button:hover {
     cursor: pointer;
+    transform: scale(1.05);
 }
+

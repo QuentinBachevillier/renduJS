@@ -58,10 +58,13 @@ function initAvis(data, i, parent) {
     let section = createHtmlElement("section", null, parent);
     section.className = "avis"
         let div = createHtmlElement("div", null, section);
-            createHtmlElement("h3", data.temoignages[i]["prenom"], div);
-            createHtmlElement("p", `Note : ${data.temoignages[i]["note"]}/5`, div);
-        createHtmlElement("p", data.temoignages[i]["typeExperience"], section);
-        createHtmlElement("p", data.temoignages[i]["commentaire"], section);
+            createHtmlElement("h2", data.temoignages[i]["prenom"], div);
+            let note = createHtmlElement("p", `Note : ${data.temoignages[i]["note"]}/5`, div);
+            note.className = "note"
+        let commentDiv = createHtmlElement("div", null, section);
+        commentDiv.className = "comment"
+            createHtmlElement("h3", data.temoignages[i]["typeExperience"], commentDiv);
+            createHtmlElement("p", data.temoignages[i]["commentaire"], commentDiv);
 }
 
 function createHtmlElement(element, content, parent) {
